@@ -1,2 +1,41 @@
-/*cascading style sheets*/
-/*CS selector*/
+body{
+  text-align:center;
+}
+.box{
+  display: inline-block;
+  height: 400px;
+  width: 25%;
+}
+.darkBlue{
+  background-color: darkblue;
+}
+.purple{
+  background-color: purple;
+}
+.green{
+  background-color: green;
+}
+.yellow{
+  background-color: yellow;
+}
+.container{
+  height: 400px;
+  background-color: lime;
+  width:200px;
+}
+h1{
+  opacity: 0;
+}
+@media(max-width:600px){
+  .purple{
+    display: none;
+  }
+  .green{
+    display: none;
+  }
+}
+@media(min-width:1000px){
+  .darkBlue, .purple, .green, .yellow{
+    width: 100%;
+  }
+}
